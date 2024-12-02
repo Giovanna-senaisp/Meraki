@@ -228,79 +228,80 @@ body {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
-.baner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 1425px;
-    height: 905px;
-    position: relative;
-}
-
-.baner img {
-    position: absolute;
-    z-index: 1;
-}
-
-.estrelaB1 {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    z-index: 10;
-}
-
-.estrela2B {
-    position: absolute;
-    top: 200px;
-    left: 600px;
-    z-index: 10;
-}
-
-.estrela3B {
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    z-index: 10;
-}
-
-.banerT {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    z-index: 20;
-    margin-left: -250px;
-    margin-top: -150px;
-}
-
-.eventos {
-    font-size: 95px;
-    color: rgb(254, 181, 0, 1);
-    margin-left: -200px;
-    font-family: "mont6";
-}
-
-.magicas {
-    font-size: 95px;
-    color: white;
-    margin-top: -25px;
-    font-family: "mont";
-}
-
-.Bimg1 {
-    margin-left: -900px;
-}
-
-.Bimg2 {
-    margin-bottom: -250px;
-}
-
-.Bimg3 {
-    margin-right: -900px;
-}
-
+    .baner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 1425px;
+        height: 905px;
+        position: relative; /* Necessário para posicionar elementos absolutos dentro deste contêiner */
+    }
+    
+    .baner img {
+        position: relative;
+    }
+    
+    .estrelaB1, .estrela2B, .estrela3B {
+        position: absolute;
+        z-index: 500; /* Certifique-se de que este valor seja maior que o das imagens principais */
+    }
+    
+    .estrelaB1{
+        top: 30px;
+        left: 50px;
+    }
+    
+    .estrelaB2{
+        top: 200px;
+        left: 600px;
+    }
+    
+    .estrelaB3{
+        top: 100px;
+        right: 50px;
+    }
+    
+    .banerT {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 20;
+        margin-left: -250px;
+        margin-top: -150px;
+    }
+    
+    .eventos {
+        font-size: 95px;
+        color: rgb(254, 181, 0, 1);
+        margin-left: -200px;
+        font-family: "mont6";
+    }
+    
+    .magicas {
+        font-size: 95px;
+        color: white;
+        margin-top: -25px;
+        font-family: "mont";
+    }
+    
+    .Bimg1 {
+        margin-left: -900px;
+        z-index: 0.5;
+    }
+    
+    .Bimg2 {
+        margin-bottom: -250px;
+        z-index: 0.5;
+    }
+    
+    .Bimg3 {
+        margin-right: -900px;
+        z-index: 0.5;
+    }
+    
 .botoes{
     display: flex;
     flex-direction: row;
