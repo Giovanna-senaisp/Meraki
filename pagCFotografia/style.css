@@ -5,14 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-.oculto{
+/* Estilo para ocultar elementos sem remover o layout */
+.oculto {
     opacity: 0;
     visibility: hidden;
     height: 0;
     padding: 0;
     margin: 0;
-    display: none;
+    position: absolute; /* Impede que o conteúdo desapareça de forma que interfira com outros elementos */
 }
+
 
 @font-face {
     font-family: "mont";
@@ -257,9 +259,8 @@ nav li .pag {
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: -80px;
-    position: relative; /* Fundamental para posicionar elementos absolutos */
+    position: relative;
 }
-
 main {
     display: flex;
     width: 100%;
@@ -269,8 +270,63 @@ main {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
+.perfilf{
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semitransparente (opcional) */
+    padding: 5px;
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    font-family: "mont";
+    font-size: 14px;
+    text-align: center;
+}
+.gigi a {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #B41D6C;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #B41D6C;
+}
+
+.gigi h1 {
+    margin-bottom: 50px;
+    margin-left: 150px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FEB500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.gigi:hover a, .gigi:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imagem-hover {
+    display: none;
+    opacity: 0;
+    border: solid 5px #4848D8;
+    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+}
+
+.gigi:hover .imagem-inicial {
+    display: none;
+}
+
+.gigi:hover .imagem-hover {
+    display: block;
+    opacity: 1;
+}
+
 #paisagismo {
     display: flex;
     width: 100%;
@@ -282,13 +338,15 @@ main {
     align-items: flex-start;
     margin-left: 50px;
 }
+
 .gigi {
+    position: relative; /* Define a div como referência para posicionamento absoluto */
     display: flex;
-    width: fit-content;
-    height: fit-content;
     justify-content: center;
     align-items: center;
     margin: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 
 #divisao1 .gigi img {
@@ -433,20 +491,16 @@ main {
 }
 #floresta img{
     height: 500px;
-}
-.gigi1 img:hover{
-    background-image: url(img/imgPaisagismo/paisagismoF4.png);
-    border: 3px #B41D6C;
-}                  
+}                
 .botoes {
     position: absolute;
     bottom: 50px;
     right: 50px;
     z-index: 100;
     display: flex;
-    flex-direction: column; /* Alinha os botões em coluna */
-    gap: 15px; /* Adiciona espaçamento vertical */
-    align-items: flex-end; /* Alinha os botões à direita */
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
 }
 
 button {
@@ -484,6 +538,7 @@ button {
 .fil {
     background-color: #FCE6D9;
     font-size: 17px;
+    font-family: "mont5";
     color: black;
     border-radius: 60px;
     width: 137px;
@@ -494,6 +549,12 @@ button {
     align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 10;
+}
+.fil img{
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+    background: none;
 }
 
 
