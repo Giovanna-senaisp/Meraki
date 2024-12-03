@@ -271,37 +271,29 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
 }
-.perfilf{
-    position: absolute;
-    bottom: 10px; /* Ajuste conforme necessário */
-    right: 10px; /* Ajuste conforme necessário */
-    background-color: rgba(255, 255, 255, 0.7); /* Fundo semitransparente (opcional) */
-    padding: 5px;
-    border-radius: 5px; /* Bordas arredondadas (opcional) */
-    font-family: "mont";
-    font-size: 14px;
-    text-align: center;
-}
+
 .gigi a {
     position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    color: #B41D6C;
+    color: #FCE6D9;
     font-family: "mont";
     font-size: 24px;
     text-align: center;
-    -webkit-text-stroke: 0.5px #B41D6C;
+    -webkit-text-stroke: 0.5px #FCE6D9;
+    margin-bottom: -250px;
+    margin-left: -150px;
 }
 
 .gigi h1 {
-    margin-bottom: 50px;
-    margin-left: 150px;
+    margin-bottom: -280px;
+    margin-left: -180px;
     position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    color: #FEB500;
+    color: #FCE6D9;
     font-size: 15px;
     text-align: center;
 }
@@ -340,13 +332,12 @@ main {
 }
 
 .gigi {
-    position: relative; /* Define a div como referência para posicionamento absoluto */
     display: flex;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    width: fit-content;
-    height: fit-content;
 }
 
 #divisao1 .gigi img {
@@ -385,6 +376,60 @@ main {
     justify-content: center;
     align-items: flex-start;
     margin-left: 55px;
+}
+.city {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.city a {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #FCE6D9;
+    margin-bottom: -250px;
+    margin-left: -150px;
+}
+
+.city h1 {
+    margin-bottom: -280px;
+    margin-left: -180px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-size: 15px;
+    text-align: center;
+}
+
+.city:hover a, .city:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imagem-hover {
+    display: none;
+    opacity: 0;
+    border: solid 5px #4848D8;
+    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+}
+
+.city:hover .imagem-inicial {
+    display: none;
+}
+
+.city:hover .imagem-hover {
+    display: block;
+    opacity: 1;
 }
 #urb1 {
     display: flex;
@@ -441,13 +486,59 @@ main {
     align-items: flex-start;
     margin-left: 50px;
 }
-.fotod{
+.fotod {
     display: flex;
     width: fit-content;
     height: fit-content;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 10px;
+}
+.fotod a {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #FCE6D9;
+    margin-bottom: -250px;
+    margin-left: -150px;
+}
+
+.fotod h1 {
+    margin-bottom: -280px;
+    margin-left: -180px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-size: 15px;
+    text-align: center;
+}
+
+.fotod:hover a, .fotod:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imagem-hover {
+    display: none;
+    opacity: 0;
+    border: solid 5px #4848D8;
+    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+}
+
+.fotod:hover .imagem-inicial {
+    display: none;
+}
+
+.fotod:hover .imagem-hover {
+    display: block;
+    opacity: 1;
 }
 .d1{
     display: flex;
