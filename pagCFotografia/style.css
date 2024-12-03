@@ -433,6 +433,10 @@ main {
 }
 #floresta img{
     height: 500px;
+}
+.gigi1 img:hover{
+    background-image: url(img/imgPaisagismo/paisagismoF4.png);
+    border: 3px #B41D6C;
 }                  
 .botoes {
     position: absolute;
