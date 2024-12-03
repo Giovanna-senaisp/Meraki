@@ -257,6 +257,7 @@ nav li .pag {
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: -80px;
+    position: relative; /* Fundamental para posicionar elementos absolutos */
 }
 
 main {
@@ -280,10 +281,8 @@ main {
     justify-content: center;
     align-items: flex-start;
     margin-left: 50px;
-
 }
-
-.gigi {
+#gigi1 #gigi2 #gigi3 #gigi3 #gigi4 #gigi5 #gigi6 {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -292,12 +291,10 @@ main {
     margin: 10px;
 }
 
-#divisao1 .gigi img {
+#divisao1 #gigi1 #gigi2 #gigi3 #gigi3 #gigi4 #gigi5 #gigi6 img {
     width: 642px;
     height: 426px;
 }
-
-
 #divisao2 {
     display: flex;
     width: 100%;
@@ -306,26 +303,20 @@ main {
     align-items: flex-start;
     flex-direction: row;
 }
-
-#barco img {
+.barco img {
     height: 858px;
     width: ;
-
 }
-
 #divisao3 {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
-
 }
-
 #divisao3 img {
     width: 380px;
 }
-
 #urbana {
     display: flex;
     width: 100%;
@@ -337,7 +328,6 @@ main {
     align-items: flex-start;
     margin-left: 55px;
 }
-
 #urb1 {
     display: flex;
     width: auto;
@@ -346,7 +336,6 @@ main {
     justify-content: center;
     flex-direction: column;
 }
-
 #urb2 {
     display: flex;
     width: auto;
@@ -355,7 +344,6 @@ main {
     justify-content: center;
     flex-direction: column;
 }
-
 #urb3 {
     display: flex;
     width: auto;
@@ -372,12 +360,10 @@ main {
     justify-content: center;
     flex-direction: row;
 }
-
 #fogo img {
     width: 763px;
     height: 498px;
 }
-
 .city {
     display: flex;
     width: fit-content;
@@ -385,9 +371,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 5px;
-
 }
-
 #documental{
     display: flex;
     width: 100%;
@@ -449,38 +433,89 @@ main {
 }
 #floresta img{
     height: 500px;
-}                  
-.botoes{
-    position: absolute;
-    z-index: 3;
 }
-button{
+.hover-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-container img {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-container:hover img {
+    opacity: 0.3; /* Torna a imagem mais transparente */
+    transform: scale(1.1); /* Aumenta a imagem */
+    filter: blur(2px); /* Desfoca a imagem */
+}
+
+.hover-container:hover {
+    border: 2px solid #ff9900;
+    transform: scale(1.05);
+}
+
+.hover-container .hover-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-container:hover .hover-title {
+    opacity: 1; /* Torna o título visível ao passar o mouse */
+}
+
+.botoes {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column; /* Alinha os botões em coluna */
+    gap: 15px; /* Adiciona espaçamento vertical */
+    align-items: flex-end; /* Alinha os botões à direita */
+}
+
+button {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    width: 137px;
-    height: 50px;
     justify-content: center;
     align-items: center;
     border-radius: 60px;
 }
-.filtrar button{
+
+.filtrar button {
     color: #1a043600;
-    background-color: rgba(0, 0, 0, 0.236);
+    background-color: rgba(0, 0, 0, 0.514);
     border: 3px solid #FCE6D9;
     font-size: 28px;
     border-radius: 60px;
     -webkit-text-stroke: #FCE6D9 1px;
     width: fit-content;
     height: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#burbano{
+    margin-left: 50px;
 }
 .filtrar {
     display: flex;
     flex-direction: column;
-    width: 234px;
-    height: 356px;
+    align-items: flex-end;
+    margin-bottom: -5px;
 }
-.fil{
+
+.fil {
     background-color: #FCE6D9;
     font-size: 17px;
     color: black;
@@ -491,7 +526,11 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
+
+
 footer {
     background-color: #2A114B;
     height: 210px;
@@ -539,6 +578,7 @@ transition: none;
 .baixoRodape:hover {
     font-size: 23px;
     transition: ease-in-out;
+    transition: 0.3s;
 }
 .redes {
 padding-top: 40px;
