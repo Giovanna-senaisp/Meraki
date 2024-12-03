@@ -271,43 +271,43 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
 }
-
+#cavalo a, h1{
+    margin-left: -250px;
+}
+#nadador a, h1{
+    margin-left: -250px;
+}
 .gigi a {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     color: #FCE6D9;
+    position: absolute;
     font-family: "mont";
     font-size: 24px;
     text-align: center;
-    -webkit-text-stroke: 0.5px #FCE6D9;
     margin-bottom: -250px;
     margin-left: -150px;
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px black;
+    padding: 15px;
 }
 
 .gigi h1 {
     margin-bottom: -280px;
     margin-left: -180px;
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     color: #FCE6D9;
     font-size: 15px;
     text-align: center;
-}
-
-.gigi:hover a, .gigi:hover h1 {
-    visibility: visible;
-    opacity: 1;
-}
+    text-shadow: 1px 1px 1px black;
+} 
 
 .imagem-hover {
     display: none;
     opacity: 0;
-    border: solid 5px #4848D8;
-    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+    border: solid 5px #FCE6D9;
+    transition: opacity 5s ease, visibility 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .gigi:hover .imagem-inicial {
@@ -387,44 +387,31 @@ main {
 }
 .city a {
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 5s ease, visibility 0.3s ease;
     color: #FCE6D9;
     font-family: "mont";
     font-size: 24px;
     text-align: center;
-    -webkit-text-stroke: 0.5px #FCE6D9;
     margin-bottom: -250px;
     margin-left: -150px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: solid;
 }
 
 .city h1 {
     margin-bottom: -280px;
     margin-left: -180px;
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 5s ease, visibility 0.3s ease;
     color: #FCE6D9;
     font-size: 15px;
     text-align: center;
-}
-
-.city:hover a, .city:hover h1 {
-    visibility: visible;
-    opacity: 1;
-}
-
-.imagem-hover {
-    display: none;
-    opacity: 0;
-    border: solid 5px #4848D8;
-    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+    text-shadow: 1px 1px 1px black;
 }
 
 .city:hover .imagem-inicial {
     display: none;
+    transition: opacity 5s ease-in-out;
 }
 
 .city:hover .imagem-hover {
@@ -496,40 +483,26 @@ main {
 }
 .fotod a {
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     color: #FCE6D9;
     font-family: "mont";
     font-size: 24px;
     text-align: center;
-    -webkit-text-stroke: 0.5px #FCE6D9;
     margin-bottom: -250px;
     margin-left: -150px;
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px black;
 }
 
 .fotod h1 {
     margin-bottom: -280px;
     margin-left: -180px;
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     color: #FCE6D9;
     font-size: 15px;
     text-align: center;
-}
-
-.fotod:hover a, .fotod:hover h1 {
-    visibility: visible;
-    opacity: 1;
-}
-
-.imagem-hover {
-    display: none;
-    opacity: 0;
-    border: solid 5px #4848D8;
-    transition: opacity 0.s ease, visibility 0.2s ease-in-out;
+    text-shadow: 1px 1px 1px black;
 }
 
 .fotod:hover .imagem-inicial {
@@ -638,8 +611,8 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .fil img{
     width: 16px;

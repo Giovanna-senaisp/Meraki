@@ -269,8 +269,6 @@ body {
         justify-content: flex-start;
         position: relative;
         z-index: 20;
-        margin-left: -250px;
-        margin-top: -150px;
     }
     
     .eventos {
