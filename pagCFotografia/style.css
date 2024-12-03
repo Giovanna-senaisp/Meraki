@@ -282,7 +282,7 @@ main {
     align-items: flex-start;
     margin-left: 50px;
 }
-#gigi1 #gigi2 #gigi3 #gigi3 #gigi4 #gigi5 #gigi6 {
+.gigi {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -291,7 +291,7 @@ main {
     margin: 10px;
 }
 
-#divisao1 #gigi1 #gigi2 #gigi3 #gigi3 #gigi4 #gigi5 #gigi6 img {
+#divisao1 .gigi img {
     width: 642px;
     height: 426px;
 }
@@ -303,7 +303,7 @@ main {
     align-items: flex-start;
     flex-direction: row;
 }
-.barco img {
+#barco img {
     height: 858px;
     width: ;
 }
@@ -433,45 +433,7 @@ main {
 }
 #floresta img{
     height: 500px;
-}
-.hover-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.hover-container img {
-    transition: all 0.3s ease-in-out;
-}
-
-.hover-container:hover img {
-    opacity: 0.3; /* Torna a imagem mais transparente */
-    transform: scale(1.1); /* Aumenta a imagem */
-    filter: blur(2px); /* Desfoca a imagem */
-}
-
-.hover-container:hover {
-    border: 2px solid #ff9900;
-    transform: scale(1.05);
-}
-
-.hover-container .hover-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.hover-container:hover .hover-title {
-    opacity: 1; /* Torna o título visível ao passar o mouse */
-}
-
+}                  
 .botoes {
     position: absolute;
     bottom: 50px;
